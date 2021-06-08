@@ -1,0 +1,144 @@
+package SE116;
+
+import jdk.dynalink.beans.StaticClass;
+
+public  class Items
+{
+    public Items getNewItems()
+    {
+        return new Items();
+    }
+public static class Weapons  extends Items
+{
+String name;
+int damage;
+int value;
+int range;
+public Weapons(String name, int damage, int value, int range)
+{
+this.name = name;
+ this.damage = damage;
+ this.value = value;
+ this.range = range;
+}
+    public String getName() {
+        return name;
+    }
+    public void setname(String name) {
+        this.name = name;
+    }
+
+    public int getdamage() {
+        return damage;
+    }
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public int getvalue() {
+        return value;
+    }
+    public void setvalue(int value) {
+        this.value = value;
+    }
+    public int getRange() {
+        return range;
+    }
+    public void setRange(int range) {
+        this.range = range;
+    }
+}
+public static class Armors extends Items {
+    String name;
+    int defence;
+    int value;
+    int durability;
+
+    public Armors(String name, int defence, int value, int durability) {
+        this.name = name;
+        this.defence = defence;
+        this.value = value;
+        this.durability = durability;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setname(String name) {
+        this.name = name;
+    }
+
+    public int getDefence() {
+        return defence;
+    }
+    public void setDefence(int defence) {
+        this.defence = defence;
+    }
+
+    public int getvalue() {
+        return value;
+    }
+    public void setvalue(int value) {
+        this.value = value;
+    }
+    public int getDurability() {
+        return durability;
+    }
+    public void setDurability(int durability) {
+        this.durability = durability;
+    }
+ }
+    public class Valuables extends Items {
+        String name;
+        int value;
+
+        public Valuables(String name, int value) {
+            this.name = name;
+            this.value = value;
+        }
+        public String getName() {
+            return name;
+        }
+        public void setname(String name) {
+            this.name = name;
+        }
+
+        public int getValue() {
+            return value;
+        }
+        public void setValue(int value) {
+            this.value = value;
+        }
+    }
+
+    public class Potions extends Items {
+        String name;
+        int value;
+        int heal;
+
+        public Potions(String name, int value, int heal) {
+            this.name = name;
+            this.value = value;
+            this.heal = heal;
+        }
+        public String getName() {
+            return name;
+        }
+        public void setname(String name) {
+            this.name = name;
+        }
+
+        public int getValue() {
+            return value;
+        }
+        public void setValue(int value) {
+            this.value = value;
+        }
+
+        public int getHeal() {
+            return heal;
+        }
+        public void setHeal(int heal) {
+            this.heal = heal;
+        }
+    }
+}
